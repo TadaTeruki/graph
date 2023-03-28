@@ -6,8 +6,8 @@ This package uses adjacency list representation for implementing graph data stru
 
 ## features
 
-`graph.DirectedGraph` : represents directed graph<br>
-`graph.UndirectedGraph` : represents undirected graph<br>
+`graph.DirectedGraph` : represents a directed graph<br>
+`graph.UndirectedGraph` : represents an undirected graph<br>
 
 Both structure implements `graph.Graph`.
 ```go
@@ -19,7 +19,7 @@ type Graph interface {
 	HasEdge(i1, i2 int) bool
 	Order() int
 	Size() int
-    Clear()
+    	Clear()
 }
 ```
 
