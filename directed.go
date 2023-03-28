@@ -8,8 +8,8 @@ type DirectedGraph struct {
 	link []list.List
 }
 
-// NewDirected creates a new directed graph with a given order (number of vertices).
-func NewDirected(order int) *DirectedGraph {
+// NewDirectedGraph creates a new directed graph with a given order (number of vertices).
+func NewDirectedGraph(order int) *DirectedGraph {
 	return &DirectedGraph{link: make([]list.List, order)}
 }
 

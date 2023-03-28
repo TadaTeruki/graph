@@ -8,7 +8,7 @@ import (
 
 func TestDirectedGraph(t *testing.T) {
 	// Create a new graph with 4 vertices
-	g := graph.NewDirected(4)
+	g := graph.NewDirectedGraph(4)
 
 	// Test the Order method
 	if g.Order() != 4 {
@@ -66,7 +66,7 @@ func TestDirectedGraph(t *testing.T) {
 
 func TestUndirectedGraph(t *testing.T) {
 	// Create a new graph with 4 vertices
-	g := graph.NewUndirected(4)
+	g := graph.NewUndirectedGraph(4)
 
 	// Test the Order method
 	if g.Order() != 4 {

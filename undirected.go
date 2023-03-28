@@ -8,8 +8,8 @@ type UndirectedGraph struct {
 	link []list.List
 }
 
-// NewUndirected creates a new undirected graph with a given order (number of vertices).
-func NewUndirected(order int) *UndirectedGraph {
+// NewUndirectedGraph creates a new undirected graph with a given order (number of vertices).
+func NewUndirectedGraph(order int) *UndirectedGraph {
 	return &UndirectedGraph{link: make([]list.List, order)}
 }
 

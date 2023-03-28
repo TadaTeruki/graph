@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	g := graph.NewDirected(4) // Create a new graph with 4 vertices
+	g := graph.NewDirectedGraph(4) // Create a new graph with 4 vertices
 
 	g.AddEdge(0, 1) // Add an edge from 0 to 1
 
