@@ -1,13 +1,11 @@
 # Graph
 
-This package provides a simple implementation of a graph data structures written in Go.
-
-This package uses adjacency list representation for implementing graph data structures.
+This package provides a simple implementation of a graph data structures useing adjacency list representation written in Go.
 
 ## features
 
-`graph.DirectedGraph` : represents a directed graph<br>
-`graph.UndirectedGraph` : represents an undirected graph<br>
+`graph.DirectedGraph` : directed graph<br>
+`graph.UndirectedGraph` : undirected graph<br>
 
 Both structure implements `graph.Graph`.
 ```go
@@ -19,7 +17,7 @@ type Graph interface {
 	HasEdge(i1, i2 int) bool
 	Order() int
 	Size() int
-    	Clear()
+	Clear()
 }
 ```
 
@@ -35,9 +33,10 @@ import (
 )
 
 func main() {
-	g := graph.NewDirected(4) // Create a new graph with 4 vertices
+	g := graph.NewDirectedGraph(4) // Create a new graph with 4 vertices
 
 	g.AddEdge(0, 1) // Add an edge from 0 to 1
+
 	g.AddEdge(2, 3) // Add an edge from 0 to 2
 
 	// Add more edges
@@ -51,5 +50,4 @@ func main() {
 		})
 	}
 }
-
 ```
